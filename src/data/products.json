@@ -1,0 +1,43 @@
+[{
+    "id": 1,
+    "name": "Ayakkabı",
+    "price": "10",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/114/images/380/Screen_Shot_2017-02-23_at_15.34.11__98669.1487864074.1280.1280.png?c=2",
+    "attr1":"En Ucuz Ürün"
+  },
+  {
+    "id": 2,
+    "name": "Gömlek",
+    "price": "20",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/131/images/416/Screen_Shot_2017-06-21_at_15.09.15__60224.1498054295.1280.1280.png?c=2",
+    "attr1":"Ücretsiz Kargo"
+  },
+  {
+    "id": 3,
+    "name": "Çorap",
+    "price": "30",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/130/images/415/Screen_Shot_2017-06-21_at_15.06.12__63639.1498055436.1280.1280.png?c=2",
+    "attr1":"Süper Fiyat"
+  },
+  {
+    "id": 4,
+    "name": "Ceket",
+    "price": "40",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/129/images/414/Screen_Shot_2017-06-21_at_14.56.51__76927.1498054632.1280.1280.png?c=2",
+    "attr1":"Ücretsiz Kargo"
+  },
+  {
+    "id": 5,
+    "name": "Elbise",
+    "price": "50",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/128/images/413/Screen_Shot_2017-06-21_at_14.56.22__47661.1498053670.1280.1280.png?c=2",
+    "attr1":"Harika Fiyat"
+  },
+  {
+    "id": 6,
+    "name": "T-shirt",
+    "price": "60",
+    "imageUrl": "https://cdn10.bigcommerce.com/s-qcnkytakdy/products/118/images/417/Screen_Shot_2017-06-21_at_15.13.56__00062.1498054476.500.750.png?c=2",
+    "attr1":"En Ucuz Ürün"
+  }
+]
