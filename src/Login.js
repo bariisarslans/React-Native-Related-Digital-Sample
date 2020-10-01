@@ -43,6 +43,7 @@ export default class Login extends Component {
   }
 
   addExtra = async () => {
+    // RMC
     await euroMessageApi.setUserProperty("email",this.user.email);
     await euroMessageApi.setUserProperty("keyID",this.user.keyID);
     await euroMessageApi.setUserProperty("pushPermit",this.user.pushPermit);

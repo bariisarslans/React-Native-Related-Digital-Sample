@@ -4,7 +4,6 @@ import globalStyles, { color } from './styles/globalStyles'
 import User from './functions/User';
 import {visilabsApi,euroMessageApi} from './data/rmcConfig';
 import { Actions } from 'react-native-router-flux';
-// import PushNotif, { TOKEN } from './PushNotification';
 
 const { width, height } = Dimensions.get('window');
 
@@ -63,6 +62,7 @@ export default class Profile extends Component {
     }
 
     addExtra = async () => {
+        // RMC
         await euroMessageApi.setUserProperty("email",this.state.user.email);
         await euroMessageApi.setUserProperty("keyID",this.state.user.keyID);
         await euroMessageApi.setUserProperty("pushPermit",this.state.user.pushPermit);
