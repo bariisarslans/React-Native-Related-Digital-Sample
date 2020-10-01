@@ -159,6 +159,7 @@ export default class Root extends Component {
             component={Campaigns}
             title={"Campaigns"}
             titleStyle={styles.titleStyle}
+            navTransparent
           />
 
 
