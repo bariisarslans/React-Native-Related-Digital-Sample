@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
+import { Actions } from 'react-native-router-flux';
+
 import Products from './components/products';
 import PRODUCTS from './data/products.json';
 import Swiper from './components/swiper';
 import User from './functions/User';
 import globalStyles, { color } from './styles/globalStyles';
-import Menu from './components/menu'
+import Menu from './components/menu';
+
+import Story from './components/story/Story'
 
 import {visilabsApi} from './data/rmcConfig';
 
@@ -28,10 +32,20 @@ export default class Home extends Component {
     User.getUser().then(user => this.setState({ user }));
   }
 
+  action(url){
+    Actions[url].call()
+  }
+
   render() {
     return (
       <View style={globalStyles.container}>
         <View style={globalStyles.containerItemCenter}>
+          
+        <Story 
+          size={100}            // Optional
+          action={this.action}  // Required
+        />
+
           <Text style={globalStyles.title}>
             {
               this.state.user.email ? "Hoşgeldin " + this.state.user.email : "Email is empty"
@@ -39,6 +53,7 @@ export default class Home extends Component {
           </Text>
           <Menu />
           <ScrollView style={globalStyles.ScrollView}>
+
             <Swiper />
             <View style={styles.customView}>
               <Products productList={PRODUCTS} />
