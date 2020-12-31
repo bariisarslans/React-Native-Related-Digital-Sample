@@ -18,9 +18,16 @@
 		566B27AF48620FF5A300DF06 /* libPods-ReactNativeRelatedDigitalSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E29EAC2D8C2D0C6B7C11A74 /* libPods-ReactNativeRelatedDigitalSample-tvOSTests.a */; };
 		75BDCD1433074E1325F86326 /* libPods-RelatedDigitalNotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D83472AB2EEBC01FBC530 /* libPods-RelatedDigitalNotificationService.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B157F2C259CB68A0048930E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B157F2B259CB68A0048930E /* Empty.swift */; };
+		8B157F34259CB90D0048930E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B157F33259CB90D0048930E /* Empty.swift */; };
+		8B157F7B259CBB790048930E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B157F7A259CBB790048930E /* UserNotifications.framework */; };
+		8B157F7D259CBB790048930E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B157F7C259CBB790048930E /* UserNotificationsUI.framework */; };
+		8B157F87259CBB790048930E /* RelatedDigitalNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B157F79259CBB790048930E /* RelatedDigitalNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B157F9F259CBBC20048930E /* EMNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B157F9E259CBBC20048930E /* EMNotificationViewController.swift */; };
 		8B5F80DF251A17B500F575D5 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F80DE251A17B500F575D5 /* NotificationService.m */; };
 		8B5F80E3251A17B500F575D5 /* RelatedDigitalNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B5F80DB251A17B500F575D5 /* RelatedDigitalNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD091001AABF0009C017F76C /* libPods-ReactNativeRelatedDigitalSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3409E67100363C35A3DD9A77 /* libPods-ReactNativeRelatedDigitalSample.a */; };
+		B5B7FCDE1902DC4A1DAD3F19 /* libPods-RelatedDigitalNotificationContent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E18D62DA8D3619DE4E639E /* libPods-RelatedDigitalNotificationContent.a */; };
 		F7881712E229F7CB94EC0A8C /* libPods-ReactNativeRelatedDigitalSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 439D359C1F814305BF5D668F /* libPods-ReactNativeRelatedDigitalSample-tvOS.a */; };
 		FCE54FE89DD09A18C21602EF /* libPods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE91E92DC34072EDCE1F5F4 /* libPods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.a */; };
 /* End PBXBuildFile section */
@@ -40,6 +47,13 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "ReactNativeRelatedDigitalSample-tvOS";
 		};
+		8B157F85259CBB790048930E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B157F78259CBB790048930E;
+			remoteInfo = RelatedDigitalNotificationContent;
+		};
 		8B5F80E1251A17B500F575D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
@@ -56,6 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				8B157F87259CBB790048930E /* RelatedDigitalNotificationContent.appex in Embed App Extensions */,
 				8B5F80E3251A17B500F575D5 /* RelatedDigitalNotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -88,15 +103,28 @@
 		7007DB0B8C64D919C068FE7A /* Pods-RelatedDigitalNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationService.release.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeRelatedDigitalSample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8694C16B410367E50FE37947 /* Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests/Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B157F2A259CB68A0048930E /* ReactNativeRelatedDigitalSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeRelatedDigitalSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B157F2B259CB68A0048930E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		8B157F32259CB90D0048930E /* RelatedDigitalNotificationService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RelatedDigitalNotificationService-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B157F33259CB90D0048930E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		8B157F79259CBB790048930E /* RelatedDigitalNotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RelatedDigitalNotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B157F7A259CBB790048930E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		8B157F7C259CBB790048930E /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		8B157F84259CBB790048930E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B157F9D259CBBC20048930E /* RelatedDigitalNotificationContent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RelatedDigitalNotificationContent-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B157F9E259CBBC20048930E /* EMNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMNotificationViewController.swift; sourceTree = "<group>"; };
 		8B5F80DB251A17B500F575D5 /* RelatedDigitalNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RelatedDigitalNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5F80DD251A17B500F575D5 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		8B5F80DE251A17B500F575D5 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		8B5F80E0251A17B500F575D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B7F7EC32514D91C007EAD54 /* ReactNativeRelatedDigitalSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativeRelatedDigitalSample.entitlements; path = ReactNativeRelatedDigitalSample/ReactNativeRelatedDigitalSample.entitlements; sourceTree = "<group>"; };
+		99F2B0E476FB6024ECF4F87D /* Pods-RelatedDigitalNotificationContent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationContent.debug.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationContent/Pods-RelatedDigitalNotificationContent.debug.xcconfig"; sourceTree = "<group>"; };
 		9AC85B1D70FD253226F1F131 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationService.debug.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		A5578620DA62C64BCAFA6F28 /* Pods-ReactNativeRelatedDigitalSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRelatedDigitalSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRelatedDigitalSample-tvOS/Pods-ReactNativeRelatedDigitalSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6522ACBA0BBBDF5530BF696 /* Pods-ReactNativeRelatedDigitalSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRelatedDigitalSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRelatedDigitalSample-tvOSTests/Pods-ReactNativeRelatedDigitalSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE91E92DC34072EDCE1F5F4 /* libPods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBAB5E9A0F77E68C39EF24A /* Pods-RelatedDigitalNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationContent.release.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationContent/Pods-RelatedDigitalNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
+		E7E18D62DA8D3619DE4E639E /* libPods-RelatedDigitalNotificationContent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RelatedDigitalNotificationContent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +159,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				566B27AF48620FF5A300DF06 /* libPods-ReactNativeRelatedDigitalSample-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B157F76259CBB790048930E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B157F7D259CBB790048930E /* UserNotificationsUI.framework in Frameworks */,
+				8B157F7B259CBB790048930E /* UserNotifications.framework in Frameworks */,
+				B5B7FCDE1902DC4A1DAD3F19 /* libPods-RelatedDigitalNotificationContent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +213,8 @@
 				1EBF76FA32B246F86A374566 /* Pods-ReactNativeRelatedDigitalSample-tvOSTests.release.xcconfig */,
 				9AC85B1D70FD253226F1F131 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */,
 				7007DB0B8C64D919C068FE7A /* Pods-RelatedDigitalNotificationService.release.xcconfig */,
+				99F2B0E476FB6024ECF4F87D /* Pods-RelatedDigitalNotificationContent.debug.xcconfig */,
+				AFBAB5E9A0F77E68C39EF24A /* Pods-RelatedDigitalNotificationContent.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,6 +230,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				8B157F2B259CB68A0048930E /* Empty.swift */,
+				8B157F2A259CB68A0048930E /* ReactNativeRelatedDigitalSample-Bridging-Header.h */,
 			);
 			name = ReactNativeRelatedDigitalSample;
 			sourceTree = "<group>";
@@ -204,6 +246,9 @@
 				439D359C1F814305BF5D668F /* libPods-ReactNativeRelatedDigitalSample-tvOS.a */,
 				0E29EAC2D8C2D0C6B7C11A74 /* libPods-ReactNativeRelatedDigitalSample-tvOSTests.a */,
 				1E9D83472AB2EEBC01FBC530 /* libPods-RelatedDigitalNotificationService.a */,
+				8B157F7A259CBB790048930E /* UserNotifications.framework */,
+				8B157F7C259CBB790048930E /* UserNotificationsUI.framework */,
+				E7E18D62DA8D3619DE4E639E /* libPods-RelatedDigitalNotificationContent.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,6 +267,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeRelatedDigitalSampleTests */,
 				8B5F80DC251A17B500F575D5 /* RelatedDigitalNotificationService */,
+				8B157F7E259CBB790048930E /* RelatedDigitalNotificationContent */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0533D317D43573EA10151985 /* Pods */,
@@ -239,8 +285,19 @@
 				2D02E47B1E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOSTests.xctest */,
 				8B5F80DB251A17B500F575D5 /* RelatedDigitalNotificationService.appex */,
+				8B157F79259CBB790048930E /* RelatedDigitalNotificationContent.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8B157F7E259CBB790048930E /* RelatedDigitalNotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				8B157F84259CBB790048930E /* Info.plist */,
+				8B157F9E259CBBC20048930E /* EMNotificationViewController.swift */,
+				8B157F9D259CBBC20048930E /* RelatedDigitalNotificationContent-Bridging-Header.h */,
+			);
+			path = RelatedDigitalNotificationContent;
 			sourceTree = "<group>";
 		};
 		8B5F80DC251A17B500F575D5 /* RelatedDigitalNotificationService */ = {
@@ -249,6 +306,8 @@
 				8B5F80DD251A17B500F575D5 /* NotificationService.h */,
 				8B5F80DE251A17B500F575D5 /* NotificationService.m */,
 				8B5F80E0251A17B500F575D5 /* Info.plist */,
+				8B157F33259CB90D0048930E /* Empty.swift */,
+				8B157F32259CB90D0048930E /* RelatedDigitalNotificationService-Bridging-Header.h */,
 			);
 			path = RelatedDigitalNotificationService;
 			sourceTree = "<group>";
@@ -293,6 +352,7 @@
 			);
 			dependencies = (
 				8B5F80E2251A17B500F575D5 /* PBXTargetDependency */,
+				8B157F86259CBB790048930E /* PBXTargetDependency */,
 			);
 			name = ReactNativeRelatedDigitalSample;
 			productName = ReactNativeRelatedDigitalSample;
@@ -338,6 +398,25 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8B157F78259CBB790048930E /* RelatedDigitalNotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B157F8A259CBB790048930E /* Build configuration list for PBXNativeTarget "RelatedDigitalNotificationContent" */;
+			buildPhases = (
+				EA15FD0D18B37B484D5346A7 /* [CP] Check Pods Manifest.lock */,
+				8B157F75259CBB790048930E /* Sources */,
+				8B157F76259CBB790048930E /* Frameworks */,
+				8B157F77259CBB790048930E /* Resources */,
+				D2FE3E804B984C297478F6B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelatedDigitalNotificationContent;
+			productName = RelatedDigitalNotificationContent;
+			productReference = 8B157F79259CBB790048930E /* RelatedDigitalNotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8B5F80DA251A17B500F575D5 /* RelatedDigitalNotificationService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5F80E7251A17B500F575D5 /* Build configuration list for PBXNativeTarget "RelatedDigitalNotificationService" */;
@@ -363,6 +442,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -371,7 +451,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 5M383PCDJZ;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1220;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -382,9 +462,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
+					8B157F78259CBB790048930E = {
+						CreatedOnToolsVersion = 12.2;
+						DevelopmentTeam = 5M383PCDJZ;
+						LastSwiftMigration = 1220;
+						ProvisioningStyle = Automatic;
+					};
 					8B5F80DA251A17B500F575D5 = {
 						CreatedOnToolsVersion = 12.0;
 						DevelopmentTeam = 5M383PCDJZ;
+						LastSwiftMigration = 1220;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -407,6 +494,7 @@
 				2D02E47A1E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOSTests */,
 				8B5F80DA251A17B500F575D5 /* RelatedDigitalNotificationService */,
+				8B157F78259CBB790048930E /* RelatedDigitalNotificationContent */,
 			);
 		};
 /* End PBXProject section */
@@ -437,6 +525,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B157F77259CBB790048930E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,6 +586,25 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common/AccessibilityResources.bundle",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/loading.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/placeholder.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/bad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/good.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/great.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/okay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/terrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unBad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGood.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGreat.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unOkay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unTerrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -511,6 +625,25 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loading.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/placeholder.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/good.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/great.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/okay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/terrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unBad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGood.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGreat.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unOkay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unTerrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -541,6 +674,25 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common-CoreModulesHeaders/AccessibilityResources.bundle",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/loading.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/placeholder.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/bad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/good.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/great.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/okay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/terrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unBad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGood.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGreat.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unOkay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unTerrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -561,6 +713,25 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loading.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/placeholder.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/good.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/great.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/okay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/terrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unBad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGood.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGreat.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unOkay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unTerrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -693,6 +864,25 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common-CoreModulesHeaders/AccessibilityResources.bundle",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/loading.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/placeholder.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/bad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/good.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/great.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/okay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/terrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unBad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGood.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGreat.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unOkay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unTerrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -713,10 +903,117 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loading.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/placeholder.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/good.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/great.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/okay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/terrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unBad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGood.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGreat.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unOkay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unTerrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests/Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FE3E804B984C297478F6B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelatedDigitalNotificationContent/Pods-RelatedDigitalNotificationContent-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core.common/AccessibilityResources.bundle",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/loading.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/placeholder.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/bad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/good.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/great.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/okay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/terrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unBad.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGood.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unGreat.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unOkay.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley/unTerrible.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButton@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/loading.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/placeholder.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/good.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/great.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/okay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/terrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unBad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGood.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unGreat.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unOkay.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unTerrible.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButton@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RelatedDigitalNotificationContent/Pods-RelatedDigitalNotificationContent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E73A9B95B80A7CEF1443EF29 /* [CP] Check Pods Manifest.lock */ = {
@@ -735,6 +1032,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ReactNativeRelatedDigitalSample-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA15FD0D18B37B484D5346A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelatedDigitalNotificationContent-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -796,6 +1115,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				8B157F2C259CB68A0048930E /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,11 +1136,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B157F75259CBB790048930E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B157F9F259CBBC20048930E /* EMNotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B5F80D7251A17B500F575D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8B5F80DF251A17B500F575D5 /* NotificationService.m in Sources */,
+				8B157F34259CB90D0048930E /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +1166,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* ReactNativeRelatedDigitalSample-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		8B157F86259CBB790048930E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B157F78259CBB790048930E /* RelatedDigitalNotificationContent */;
+			targetProxy = 8B157F85259CBB790048930E /* PBXContainerItemProxy */;
+		};
 		8B5F80E2251A17B500F575D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8B5F80DA251A17B500F575D5 /* RelatedDigitalNotificationService */;
@@ -849,6 +1183,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8694C16B410367E50FE37947 /* Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -872,6 +1207,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 443B6F788C6CC270368A8921 /* Pods-ReactNativeRelatedDigitalSample-ReactNativeRelatedDigitalSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeRelatedDigitalSampleTests/Info.plist;
@@ -892,6 +1228,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AF5D21D69C96180D8F7C96C /* Pods-ReactNativeRelatedDigitalSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactNativeRelatedDigitalSample/ReactNativeRelatedDigitalSample.entitlements;
@@ -907,6 +1244,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeRelatedDigitalSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeRelatedDigitalSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -917,6 +1255,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04DC3A3A9A9D2149E0EAA72C /* Pods-ReactNativeRelatedDigitalSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactNativeRelatedDigitalSample/ReactNativeRelatedDigitalSample.entitlements;
@@ -931,6 +1270,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeRelatedDigitalSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeRelatedDigitalSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1159,6 +1499,69 @@
 			};
 			name = Release;
 		};
+		8B157F88259CBB790048930E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F2B0E476FB6024ECF4F87D /* Pods-RelatedDigitalNotificationContent.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5M383PCDJZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RelatedDigitalNotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeRelatedDigitalSample.RelatedDigitalNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationContent/RelatedDigitalNotificationContent-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B157F89259CBB790048930E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBAB5E9A0F77E68C39EF24A /* Pods-RelatedDigitalNotificationContent.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5M383PCDJZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RelatedDigitalNotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeRelatedDigitalSample.RelatedDigitalNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationContent/RelatedDigitalNotificationContent-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8B5F80E5251A17B500F575D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AC85B1D70FD253226F1F131 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */;
@@ -1166,6 +1569,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -1182,6 +1586,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeRelatedDigitalSample.RelatedDigitalNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationService/RelatedDigitalNotificationService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1193,6 +1600,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -1209,6 +1617,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeRelatedDigitalSample.RelatedDigitalNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationService/RelatedDigitalNotificationService-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1257,6 +1667,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B157F8A259CBB790048930E /* Build configuration list for PBXNativeTarget "RelatedDigitalNotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B157F88259CBB790048930E /* Debug */,
+				8B157F89259CBB790048930E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

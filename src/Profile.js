@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Text, Alert, View, Switch, TextInput, Dimensions, ScrollView, TouchableOpacity,AsyncStorage, Clipboard, Platform } from 'react-native';
+import { Text, Alert, View, Switch, TextInput, Dimensions, ScrollView, TouchableOpacity, Clipboard, Platform } from 'react-native';
 import globalStyles, { color } from './styles/globalStyles'
 import User from './functions/User';
 import {visilabsApi,euroMessageApi} from './data/rmcConfig';
 import { Actions } from 'react-native-router-flux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const { width, height } = Dimensions.get('window');
 

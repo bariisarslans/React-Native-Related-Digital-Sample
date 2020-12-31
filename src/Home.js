@@ -13,6 +13,7 @@ import Menu from './components/menu';
 import Story from './components/story/Story'
 
 import {visilabsApi} from './data/rmcConfig';
+import Inapps from './components/Inapps';
 
 export default class Home extends Component {
 
@@ -51,10 +52,11 @@ export default class Home extends Component {
               this.state.user.email ? "Hoşgeldin " + this.state.user.email : "Email is empty"
             }
           </Text>
+          <Inapps/>
           <Menu />
           <ScrollView style={globalStyles.ScrollView}>
 
-            <Swiper />
+            <Swiper autoplay={false}/>
             <View style={styles.customView}>
               <Products productList={PRODUCTS} />
             </View>

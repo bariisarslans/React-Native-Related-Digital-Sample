@@ -9,6 +9,8 @@
 $ git clone https://github.com/bariisarslans/React-Native-Related-Digital-Sample.git
 $ cd React-Native-Related-Digital-Sample 
 $ npm install
+$ cd ios
+$ pod install
 ```
 
 ## Visilabs Events

@@ -37,7 +37,7 @@ export default class SwiperComponent extends Component {
       <Swiper
         style={styles.wrapper}
         showsButtons={true}
-        autoplay={true}
+        autoplay={this.props.autoplay}
         loop={true}
         horizontal={true}
         loadMinimal={true}

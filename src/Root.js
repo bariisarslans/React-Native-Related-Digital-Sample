@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, Text, View, Image, StyleSheet,AsyncStorage, Alert } from 'react-native';
+import { TouchableOpacity, Text, View, Image, StyleSheet, Alert, Linking } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import crossroads from 'crossroads'
 
-import { Router, Scene, Actions } from 'react-native-router-flux';
+import { Router, Scene, Actions, Reducer } from 'react-native-router-flux';
 import RMCFunctions from './functions/RMCFunctions';
 
-import {euroMessageApi,visilabsApi,AddEventListener,RequestPermissions} from './data/rmcConfig'
+import { euroMessageApi, visilabsApi, AddEventListener, RequestPermissions } from './data/rmcConfig'
 import User from './functions/User';
 
+// crossroads kütüphanesi eklenecek
+// crossroads.addRoute ile sayfalar eklenecek
+// Linking kütüphensi eklenip uygulama açılışında urller handle edilecek
+// url parse edilip yönlendirme yapılacak.
 
 import globalStyles, { color } from './styles/globalStyles'
 
@@ -20,30 +26,73 @@ import Basket from './Cart';
 import Purchase from './Purchase';
 import Profile from './Profile';
 
+const DEEP_URL = "rs";
+
+crossroads.addRoute('Home', Actions.Home);
+crossroads.addRoute('Product', Actions.Product);
+crossroads.addRoute('Login', Actions.Login);
+crossroads.addRoute('Signup', Actions.Signup);
+crossroads.addRoute('Campaigns', Actions.Campaigns);
+crossroads.addRoute('Category', Actions.Category);
+crossroads.addRoute('Basket', Actions.Basket);
+crossroads.addRoute('Purchase', Actions.Purchase);
+crossroads.addRoute('Profile', Actions.Profile);
 
 export default class Root extends Component {
 
   constructor(props) {
     super(props);
-
     this.addListeners();
     RequestPermissions();
 
+    this.createReducer = this.createReducer.bind(this);
+    this.handleOpenURL = this.handleOpenURL.bind(this);
   }
 
-  addListeners(){
+  addListeners() {
     AddEventListener('register', async (token) => {
       AsyncStorage.setItem('pushToken', token)
       RMCFunctions.tokenRegister(token)
-      User.getUser().then(user => { (user.token = token, User.setUser(user,"root")) })
-      Alert.alert("token",token)
+      User.getUser().then(user => { (user.token = token, User.setUser(user, "root")) })
+      Alert.alert("token", token)
     }, (notificationPayload) => {
       console.log('notification payload', notificationPayload)
-    }, euroMessageApi)
- 
+    }, euroMessageApi, visilabsApi)
+
     AddEventListener('registrationError', async (registrationError) => {
       console.log('registrationError is ', registrationError)
     }, euroMessageApi)
+  }
+
+  componentDidMount() {
+    Linking
+      .getInitialURL()
+      .then(url => {
+        this.handleOpenURL({ url });
+      })
+      .catch(error => console.error(error));
+    Linking.addEventListener('url', this.handleOpenURL);
+  }
+
+  componentWillUnmount() {
+    Linking.removeEventListener('url', this.handleOpenURL);
+  }
+
+  handleOpenURL(event) {
+    if (event.url && event.url.indexOf(DEEP_URL + '://') === 0) {
+      console.log("Depp url",event.url.slice(DEEP_URL.length + 3));
+      crossroads.parse(event.url.slice(DEEP_URL.length + 3));
+    }
+    else{
+      console.log("no Depp url");
+    }
+  }
+
+  createReducer(params) {
+    const defaultReducer = Reducer(params);
+    return (state, action) => {
+      return defaultReducer(state, action);
+    };
   }
 
   _renderLeftButton() {
@@ -81,7 +130,7 @@ export default class Root extends Component {
   render() {
     return (
 
-      <Router>
+      <Router createReducer={this.createReducer}>
         <Scene
           key='Root'>
 
@@ -106,7 +155,7 @@ export default class Root extends Component {
             renderLeftButton={this._renderLeftButton()}
             renderRightButton={this._renderRight()}
           />
-          
+
 
           <Scene
             key='Profile'

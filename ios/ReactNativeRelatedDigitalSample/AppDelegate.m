@@ -7,6 +7,8 @@
 #import "RelatedDigitalPushModule.h"
 #import <UserNotifications/UserNotifications.h>
 
+#import "React/RCTLinkingManager.h"
+
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
@@ -50,6 +52,10 @@ static void InitializeFlipper(UIApplication *application) {
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
   center.delegate = self;
   
+  
+  [RelatedDigitalPushModule initVisilabs:@"676D325830564761676D453D" profileId:@"356467332F6533766975593D" dataSource:@"visistore" inAppNotificationsEnabled:true requestTimeoutSeconds:30 geofenceEnabled:true maxGeofenceCount:20];
+  
+  
   return YES;
 }
 
@@ -78,6 +84,22 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
   completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+   sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+ {
+   return [RCTLinkingManager application:application openURL:url
+                       sourceApplication:sourceApplication annotation:annotation];
+ }
+
+ // Only if your app is using [Universal Links](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+ - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity
+  restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+ {
+  return [RCTLinkingManager application:application
+                   continueUserActivity:userActivity
+                     restorationHandler:restorationHandler];
+ }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
