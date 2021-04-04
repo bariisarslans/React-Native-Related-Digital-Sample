@@ -50,8 +50,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -70,5 +68,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Lokasyon iznini sadece kullanırken verin</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>lokasyon izni verin</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>location izni moruk</string>
 </dict>
 </plist>

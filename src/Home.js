@@ -26,7 +26,8 @@ export default class Home extends Component {
       }
     }
     //RMC
-    visilabsApi.customEvent(this.props.navigation.state.routeName);
+    visilabsApi.customEvent(this.props.navigation.state.routeName,{});
+    console.log("neden log yazilmiyor");
   }
 
   componentDidMount() {

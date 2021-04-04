@@ -20,8 +20,9 @@ const RMCFunctions = {
         data["OM.pu"] = pu.substr(0, pu.length - 1);
         data["OM.ppr"] = ppr.substr(0, ppr.length - 1);
 
-        visilabsApi.customEvent("Product Basket", data);
+        console.log("amque");
         console.log("Event RMC sunucularına gönderildi.", data);
+        // visilabsApi.customEvent("Product Basket", data);
     },
     purchase: function (cartData) {
         if (cartData.length <= 0)

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../cengel.gpx">
+   </FileRef>
+   <FileRef
       location = "group:ReactNativeRelatedDigitalSample.xcodeproj">
    </FileRef>
    <FileRef

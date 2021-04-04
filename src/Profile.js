@@ -62,6 +62,13 @@ export default class Profile extends Component {
         
     }
 
+    getCustomTime = () => {
+        var d = new Date();
+        var date_format_str = d.getFullYear().toString() + "-" + ((d.getMonth() + 1).toString().length == 2 ? (d.getMonth() + 1).toString() : "0" + (d.getMonth() + 1).toString()) + "-" + (d.getDate().toString().length == 2 ? d.getDate().toString() : "0" + d.getDate().toString()) + " " + (d.getHours().toString().length == 2 ? d.getHours().toString() : "0" + d.getHours().toString()) + ":" + ((d.getMinutes()).toString().length == 2 ? (d.getMinutes()).toString() : "0" + (d.getMinutes()).toString()) + ":" + (d.getSeconds()).toString();
+        return date_format_str
+    }
+
+// fB6BT22cQ46CulCjSCirE6:APA91bG2qbTf12VzkX2F2tma1kCew2Z9GUxfd1Dx9UfsfGCd15U9LVdtbd18HSxPvALefDgqqbJfr7ZiDafIwWZYW4ssaitFyxB5ryPuCpENQ9q6McMjfZ8UugDa_v5Bm8iyxs43bnXg
     addExtra = async () => {
         // RMC
         await euroMessageApi.setUserProperty("email",this.state.user.email);
@@ -69,12 +76,14 @@ export default class Profile extends Component {
         await euroMessageApi.setUserProperty("pushPermit",this.state.user.pushPermit);
         await euroMessageApi.setUserProperty("gsmPermit",this.state.user.gsmPermit);
         await euroMessageApi.setUserProperty("emailPermit",this.state.user.emailPermit);
+        await euroMessageApi.setUserProperty('ConsentTime', this.getCustomTime());
+        await euroMessageApi.setUserProperty('RecipientType', "BIREYSEL");
+        await euroMessageApi.setUserProperty('ConsentSource', "HS_MOBIL");
     }
 
     save() {
         User.setUser(this.state.user);
-        this.addExtra().then(()=>euroMessageApi.subscribe(this.state.user.token));
-        Alert.alert("Info", "User saved success");
+        this.addExtra().then(()=>(euroMessageApi.subscribe(this.state.user.token),Alert.alert("Info", "User saved success")));
     }
 
     _returnSwitchRow(permitType, fnc, txt) {

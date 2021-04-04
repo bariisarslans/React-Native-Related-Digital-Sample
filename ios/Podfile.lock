@@ -237,9 +237,9 @@ PODS:
     - React-cxxreact (= 0.63.2)
     - React-jsi (= 0.63.2)
   - React-jsinspector (0.63.2)
-  - react-native-related-digital (0.0.10):
+  - react-native-related-digital (0.0.13):
     - React
-    - VisilabsIOS
+    - VisilabsIOS (= 2.2.0)
   - react-native-safe-area-context (3.1.8):
     - React-Core
   - React-RCTActionSheet (0.63.2):
@@ -312,7 +312,7 @@ PODS:
     - React
   - RNVectorIcons (7.1.0):
     - React
-  - VisilabsIOS (2.1.0)
+  - VisilabsIOS (2.2.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -487,7 +487,7 @@ SPEC CHECKSUMS:
   React-jsi: 54245e1d5f4b690dec614a73a3795964eeef13a8
   React-jsiexecutor: 8ca588cc921e70590820ce72b8789b02c67cce38
   React-jsinspector: b14e62ebe7a66e9231e9581279909f2fc3db6606
-  react-native-related-digital: 25217e5482f5e9779b61d1c4a69b608d34692ff5
+  react-native-related-digital: 0523fa994ae94e158990be94316af7ba00a00243
   react-native-safe-area-context: 01158a92c300895d79dee447e980672dc3fb85a6
   React-RCTActionSheet: 910163b6b09685a35c4ebbc52b66d1bfbbe39fc5
   React-RCTAnimation: 9a883bbe1e9d2e158d4fb53765ed64c8dc2200c6
@@ -504,10 +504,10 @@ SPEC CHECKSUMS:
   RNReanimated: 89f5e0a04d1dd52fbf27e7e7030d8f80a646a3fc
   RNScreens: 0e91da98ab26d5d04c7b59a9b6bd694124caf88c
   RNVectorIcons: bc69e6a278b14842063605de32bec61f0b251a59
-  VisilabsIOS: 55396fcb708467a65d6908965f72c2b75b80919e
+  VisilabsIOS: a46ff070e0736ac36bd13978d68348783ed871f0
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
 PODFILE CHECKSUM: 3479dee778e091e991e7762a172c2b66c520a3c2
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

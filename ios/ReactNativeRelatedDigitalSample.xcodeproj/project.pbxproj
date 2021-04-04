@@ -604,6 +604,7 @@
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsRetryButton@3x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -643,6 +644,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsRetryButton@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +694,7 @@
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsRetryButton@3x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -731,6 +734,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsRetryButton@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -882,6 +886,7 @@
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsRetryButton@3x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -921,6 +926,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsRetryButton@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -970,6 +976,7 @@
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@2x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsCloseButtonBlack@3x.png",
+				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/VisilabsRetryButton@3x.png",
 				"${PODS_ROOT}/VisilabsIOS/VisilabsIOS/Assets/Images/Smiley",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1009,6 +1016,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsCloseButtonBlack@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VisilabsRetryButton@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Smiley",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@ import crossroads from 'crossroads'
 import { Router, Scene, Actions, Reducer } from 'react-native-router-flux';
 import RMCFunctions from './functions/RMCFunctions';
 
-import { euroMessageApi, visilabsApi, AddEventListener, RequestPermissions } from './data/rmcConfig'
+import { euroMessageApi, visilabsApi, AddEventListener, RequestPermissions, appAlias } from './data/rmcConfig'
 import User from './functions/User';
 
 // crossroads kütüphanesi eklenecek
@@ -23,6 +23,7 @@ import Signup from './Signup';
 import Campaigns from './Campaigns';
 import Category from './Category';
 import Basket from './Cart';
+import Test from './Test';
 import Purchase from './Purchase';
 import Profile from './Profile';
 
@@ -37,6 +38,7 @@ crossroads.addRoute('Category', Actions.Category);
 crossroads.addRoute('Basket', Actions.Basket);
 crossroads.addRoute('Purchase', Actions.Purchase);
 crossroads.addRoute('Profile', Actions.Profile);
+crossroads.addRoute('Test', Actions.Test);
 
 export default class Root extends Component {
 
@@ -51,12 +53,22 @@ export default class Root extends Component {
 
   addListeners() {
     AddEventListener('register', async (token) => {
-      AsyncStorage.setItem('pushToken', token)
-      RMCFunctions.tokenRegister(token)
-      User.getUser().then(user => { (user.token = token, User.setUser(user, "root")) })
-      Alert.alert("token", token)
+      // AsyncStorage.setItem('pushToken', token)
+      // RMCFunctions.tokenRegister(token)
+      // User.getUser().then(user => { (user.token = token, User.setUser(user, "root")) })
+      // Alert.alert("token", token)
+      console.log("token",token)
     }, (notificationPayload) => {
-      console.log('notification payload', notificationPayload)
+      // const parameters = {
+      //   "utm_campaign": notificationPayload.utm_campaign,
+      //   "utm_source": notificationPayload.utm_source,
+      //   "utm_medium": notificationPayload.utm_medium,
+      //   "OM.exVisitorID": "baris.arslan@euromsg.com", //RMC sistemindeki referansınız
+      //   "OM.sys.TokenID":  "fd69d3b1a7d331f28a1375a2d4edfe6b456fa640c5c0d8258e3cf0ef9f3c93cf",
+      //   "OM.sys.AppID": "RelatedStoreIOS"
+      // }
+      // visilabsApi.customEvent("Campaign",parameters)
+      console.log("notificationPayload",notificationPayload)
     }, euroMessageApi, visilabsApi)
 
     AddEventListener('registrationError', async (registrationError) => {
@@ -134,6 +146,12 @@ export default class Root extends Component {
         <Scene
           key='Root'>
 
+<Scene
+            key='Test'
+            component={Test}
+            hideNavBar
+            inital
+          />
           <Scene
             key='Login'
             component={Login}
@@ -146,6 +164,7 @@ export default class Root extends Component {
             component={Signup}
             hideNavBar
           />
+
 
           <Scene
             key='Purchase'
